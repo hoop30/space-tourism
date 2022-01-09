@@ -70,7 +70,7 @@ nav {
     .trait {
         display: none;
         position: absolute;
-        left: 167px;
+        left: 112px;
         width: 473px;
         opacity: 0.25;
         border: solid 1px #979797;
@@ -188,9 +188,10 @@ nav {
 
     @media screen and (min-width: 1440px) {
         
-
+        
         /*nav*/
         nav {
+            position: relative;
             width: 1385px;
             margin: 40px 0 0 55px;
             padding: 0;
