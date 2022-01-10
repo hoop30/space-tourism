@@ -6,7 +6,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 p{
     font-family: 'Barlow Condensed', sans-serif;
@@ -47,15 +47,6 @@ body {
 }
 
 
-.page1 {
-    background: gray;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
 /*nav-bar*/
 /*nav*/
 nav {
@@ -85,8 +76,8 @@ nav {
 
         /*background*/
         background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(81.5485px);
-        -webkit-backdrop-filter: blur(81.5485px);
+        -webkit-backdrop-filter: blur(81.5px);
+        backdrop-filter: blur(81.5px);
         /*background*/
     }
     .nav-liste ul {
@@ -135,13 +126,86 @@ nav {
                 transform: rotateZ(-45deg) translate(5.5px, -7px);
                 width: 30px;
             }
-    
-            
+
+/*home*/
+.home {
+    background-image: url(starter-code/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 112px 24px;
+    gap: 81px;
+}
+    /*gauche*/
+    .gauche {
+        height: 276;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        /*home txt*/
+            .gauche h5 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 2.7px;
+                color: #D0D6F9;
+            }
+            .gauche h1 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 80px;
+                text-align: center;
+                line-height: 100px;
+            }
+            .gauche p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                text-align: center;
+                line-height: 25px;
+                color: #D0D6F9;
+            }
+    /*droite*/
+    .droite {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        
+    }    
+        /*txt*/
+        .droite a {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+        }
+        .droite h4 {
+            text-align: center;
+            color: #0b0d17;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 1.25px;
+        }    
 
 
     @media screen and (min-width: 768px) {
         
-
+        
         /*nav*/
         nav {
             width: 768px;
@@ -182,7 +246,40 @@ nav {
                 .menu {
                     display: none;
                 }
-
+        /*home*/
+        .home {
+            background-image: url(starter-code/assets/home/background-home-tablet.jpg);
+            padding: 202px 159px 0 159px;
+            gap: 156px;
+        }
+            /*gauche*/
+            .gauche {
+                height: 334px;
+            }
+                /*home txt*/
+                .gauche h5 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 3.375px;
+                }
+                .gauche h1 {
+                    font-size: 150px;
+                    line-height: 150px;
+                }
+                .gauche p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            /*droite*/
+            .droite {
+                width: 242px;
+                height: 242px;
+            }
+            .droite h4 {
+                font-size: 32px;
+                line-height: 37px;
+                letter-spacing: 2px;
+            }     
 
     }
 
@@ -218,6 +315,49 @@ nav {
                 .menu {
                     display: none;
                 }
-
-
+        /*home*/
+        .home {
+            background-image: url(starter-code/assets/home/background-home-desktop.jpg);
+            flex-direction: row;
+            padding: 0 0 131px 165px;
+            align-items: flex-end;
+            gap: 298px;
+        }
+            /*gauche*/
+            .gauche {
+                width: 450px;
+                height: 382px;
+            }
+                /*home txt*/
+                .gauche h5 {
+                    font-size: 28px;
+                    line-height: 34px;
+                    letter-spacing: 4.725px;
+                    text-align: start;
+                }
+                .gauche h1 {
+                    line-height: 172px;
+                    text-align: start;
+                }
+                .gauche p {
+                    font-size: 18px;
+                    line-height: 32px;
+                    text-align: start;
+                }
+            /*droite*/
+            .droite {
+                width: 450px;
+                height: 450px;
+                padding: 88px;
+                position: relative;
+                top: 88px;
+            }
+            .droite:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+            .droite h4 {
+                font-size: 32px;
+                line-height: 37px;
+                letter-spacing: 2px;
+            }  
     }
